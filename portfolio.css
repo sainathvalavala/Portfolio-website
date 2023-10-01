@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 88);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(153, 153, 205);
+  font-size: 1.01rem;
+}
+.left {
+  font-size: 1.5rem;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 0;
+}
+.firstSection > div {
+  width: 30%;
+}
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+  font-size: 2.5rem;
+}
+.thirdsection {
+  max-width: 80vw;
+  margin: 100px;
+  font-size: 2.5rem;
+}
+
+.summary {
+  font-size: 1.7rem;
+  word-spacing: 10px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+.leftSection {
+  font-size: 2.5rem;
+}
+.buttons {
+  padding: 50px 0;
+}
+.btn {
+  font-size: 2.5rem;
+  padding: 12px;
+  background: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgb(153, 153, 205);
+  transform: translateY(-3px);
+}
+.rightSection img {
+  width: 80%;
+}
+hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+.purple {
+  color: rgb(173, 99, 241);
+}
+#element {
+  color: rgb(173, 99, 241);
+}
+.tab-titles {
+  display: flex;
+  justify-content: space-around;
+}
+.tab-links {
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -8px;
+  position: absolute;
+  background: #9c97f1;
+  transition: o.5s;
+}
+.tab-links.active-link::after {
+  width: 100%;
+}
+.tab-contents {
+  font-size: 1.7rem;
+  display: none;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: rgb(173, 99, 241);
+}
+.tab-contents.active-tab {
+  display: block;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  display: inline-block;
+}
+.social-icons a:hover {
+  color: #9c97f1;
+  transform: translateY(-5px);
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0px;
+  color: black;
+  background: rgb(241, 237, 237);
+  border-radius: 6px;
+}
+.submit {
+  font-size: 2.5rem;
+  padding: 12px;
+  background: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 20%;
+}
+.copyright {
+  width: 100%;
+  margin: 45px;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 20px;
+  background-color: rgb(18, 18, 88);
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    width: 100%; /* Make the nav full width for mobile */
+    max-width: none; /* Remove the max-width for mobile */
+    margin: 10px;
+  }
+
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+  .firstSection > div,
+  .rightSection {
+    width: 100%;
+    text-align: center;
+  }
+  .firstSection .buttons {
+    padding: 20px 0;
+  }
+  .rightSection img {
+    width: 70%; /* Adjust as needed */
+    margin-top: 20px; /* Add some space between text and image */
+  }
+  .thirdsection {
+    text-align: center;
+    margin: 60px 0;
+  }
+  .tab-titles {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Additional styles for smaller screens */
+  .firstSection .buttons .btn {
+    margin-bottom: 10px;
+  }
+  .tab-links,
+  .tab-contents ul li {
+    font-size: 1.5rem;
+  }
+}
